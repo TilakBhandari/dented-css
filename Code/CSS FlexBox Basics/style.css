@@ -1,0 +1,47 @@
+body {
+  font-size: 40px;
+}
+.parent {
+  background: blue;
+  padding: 10px 20px 30px 40px;
+  /* flex  */
+  display: flex;
+  height: 50vh;
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  justify-content: space-between;
+  align-items: center;
+}
+.parent > div {
+  background: grey;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .item-3 {
+  flex-grow: 1;
+}
+.item-4 {
+  flex-grow: 2;
+}
+.item-1 {
+  align-self: flex-start;
+}
+.item-9 {
+  align-self: flex-end;
+} */
+
+.item-2 {
+  order: 9;
+}
+
+.item-1 {
+  order: -2;
+}
+.parent > div:nth-child(even) {
+  background: red;
+}

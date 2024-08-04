@@ -1,0 +1,88 @@
+/* p {
+  color: rgb(202, 150, 8) !important;
+
+}
+h1 {
+  color: rgb(70, 133, 188);
+}
+h3 {
+  color: aqua;
+}
+p {
+  color: rgb(224, 80, 80);
+} 
+
+section {
+  background: rgb(155, 155, 181);
+  color: white;
+}
+id Selector 
+ #a {
+  color: red;
+}
+
+calss selector 
+.b {
+  color: green !important;
+} 
+ here, class selector didn't overwrite the id selector, so used !important  */
+
+/* section > div > p {
+  color: green;
+  text-decoration: line-through;
+  font-size: larger;
+} */
+
+/* Adjacent Selector */
+/* 
+section + p {
+  color: red;
+  font-size: 30;
+  text-decoration: line-through;
+} */
+
+/* Siblings */
+/* 
+section ~ p {
+  font-size: 20px;
+  background-color: azure;
+} */
+
+/* Attribute Selector: */
+
+/* [href] {
+  font-size: 32px;
+  text-decoration: none;
+  color: rgb(55, 17, 225);
+}
+
+[href="google.com"] {
+  color: red;
+  font-size: 60px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+} */
+/* 
+p::first-letter {
+  color: red;
+  text-decoration: none;
+  font-size: 30px;
+}
+ */
+/* pseudo element selector */
+
+/* a::before {
+  content: "Hello ";
+  color: red;
+}
+a::after {
+  content: "->>";
+} */
+
+/* a:hover {
+  font-size: 20px;
+  color: rgb(131, 22, 240);
+}
+
+p:nth-child(1) {
+  color: red;
+} */
