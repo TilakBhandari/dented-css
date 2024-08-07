@@ -202,6 +202,8 @@ main {
   background: rgba(126, 195, 126, 0.767);
   padding: 10px;
   border-radius: 10px;
+  width: fit-content;
+  padding: auto;
 }
 .by-country h2 {
   margin: 0px;
@@ -221,6 +223,8 @@ main {
   padding: 10px;
   border-radius: 10px;
   filter: blur(0.5px);
+  width: fit-content;
+  padding: auto;
 }
 .by-date li:hover {
   cursor: pointer;
@@ -279,7 +283,7 @@ main {
   border: 0px;
   box-shadow: var(--shadow);
   border-radius: 5px;
-  width: 250px;
+  width: auto;
   font-size: 1.3rem;
 }
 .subscribe button {
@@ -294,4 +298,85 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Media QUeries:  */
+
+/* @media (min-width: 500px) { */
+
+@media (max-width: 1000px) {
+  .main {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    gap: 0px;
+  }
+
+  .posts {
+    width: 70vw;
+  }
+  .right {
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  .by-country {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 70vw;
+  }
+  .by-date {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 70vw;
+  }
+  .right {
+    width: auto;
+    margin: auto;
+  }
+  .left {
+    width: auto;
+    margin: auto;
+  }
+}
+
+@media (max-width: 750px) {
+  .form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+  .subscribe {
+    height: auto;
+  }
+}
+@media (max-width: 550px) {
+  .global {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .hero-content {
+    width: 80vw;
+  }
+  .box {
+    width: auto;
+    padding: 0px;
+    margin: auto;
+  }
+  .posts {
+  }
+}
+@media (max-width: 400px) {
+  body {
+    width: fit-content;
+  }
 }
