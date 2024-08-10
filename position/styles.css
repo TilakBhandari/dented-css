@@ -1,0 +1,43 @@
+/* position : initial, inherit, static, absoulute, fixed, relative, sticky  */
+/* static: original position,
+initial : used to revert back to static position i.e, to original position.
+inherit: inherit from parents. */
+.parent {
+  background: grey;
+  min-height: 40vh;
+  padding: 1 rem;
+  font-size: 2rem;
+  position: relative;
+}
+.parent div {
+  min-height: 150px;
+}
+.c1 {
+  background: red;
+}
+.c2 {
+  background: green;
+
+  /* relative: cahange positon from it's original place, don't break the document flow.  */
+
+  /* position: absolute;
+  width: 100%; */
+  /* position: fixed;
+  right: 20px;
+  bottom: 20px; */
+  position: sticky;
+  top: 0px;
+
+  /* breaks the document flow and floats above the original document flow  */
+  /* left: 50vw;
+  top: 10rem; */
+
+  /* position: relative; */
+  /* left: 50px; */
+  /* right: ; */
+  /* top: 50px; */
+  /* bottom: ; */
+}
+.c3 {
+  background: blue;
+}

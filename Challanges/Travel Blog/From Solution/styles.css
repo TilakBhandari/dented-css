@@ -318,22 +318,27 @@ footer {
     width: 70vw;
   }
   .right {
+    display: flex;
     justify-content: center;
     align-items: center;
     margin: 0px;
     padding: 0px;
+    flex-direction: row;
+    height: auto;
+    flex-wrap: wrap;
   }
+
   .by-country {
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 70vw;
+    width: auto;
   }
   .by-date {
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 70vw;
+    width: auto;
   }
   .right {
     width: auto;
