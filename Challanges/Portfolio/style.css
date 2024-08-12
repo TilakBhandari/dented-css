@@ -259,7 +259,7 @@ header {
   /* overflow: hidden; */
   padding: 1rem;
   width: 70%;
-  border: 5px black;
+  border: 2px solid black;
   box-shadow: 0 0 30px 3px black;
   border-radius: 10px;
   height: 5rem;
