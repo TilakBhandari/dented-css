@@ -10,34 +10,53 @@ body {
   overflow-x: hidden;
   position: relative;
 }
-/* 
+
 .scrolltotop {
-  font-size: 4rem;
-  position: sticky;
+  font-size: 2rem;
+  position: fixed;
   bottom: 2rem;
-  right: 2rem;
+  right: 3rem;
   color: orangered;
-  z-index: 10;
+  z-index: 100;
+  animation: bounce 2s ease-in-out infinite;
+  transition: all 5s ease-in-out;
 }
-.darkmode {
-  font-size: 4rem;
-  position: absolute;
-  left: 5%;
-  top: 10rem;
-  color: black;
-  z-index: 10;
+
+/* .scrolltotop:hover {
+  scale: 1.2;
+  text-shadow: 0px 0px 5px 10px black;
 } */
+
+@keyframes bounce {
+  from {
+    bottom: 2.5rem;
+  }
+  to {
+    bottom: 1.5rem;
+    scale: 1.1;
+  }
+}
+
+.darkmode {
+  font-size: 2rem;
+  position: fixed;
+  left: 2rem;
+  top: 6rem;
+  color: black;
+  z-index: 100;
+}
 
 /* -----------------header--------------- */
 header {
   display: flex;
 
   width: 100vw;
-  height: 4rem;
+  height: 5rem;
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  background: rgb(200, 200, 200);
+  background: rgba(200, 200, 200, 0.281);
+  backdrop-filter: blur(10px);
   box-shadow: 0 0 5px 1px black;
   position: sticky;
   top: 0px;
@@ -322,11 +341,14 @@ header {
 
 .project-box {
   border: 1rem 1rem black;
-  background: whitesmoke;
+  background: var(--primary);
   border-radius: 10px;
 
-  box-shadow: 0 0 10px 2px black;
-  padding: 1rem;
+  /* box-shadow: 20px 20px 30px var(--primary), -20px -20px 30px whitesmoke; */
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -7px -7px 14px #969696, 7px 7px 14px #ffffff;
+
+  padding: 1.5rem;
 }
 .grid {
   display: grid;
@@ -354,4 +376,12 @@ header {
 }
 .project-box .content-box {
   padding: 0 10%;
+}
+
+.contact {
+  min-height: 50vh;
+  width: 100%;
+
+  background: var(--primaryprimary);
+  padding-top: 2rem;
 }

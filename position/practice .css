@@ -1,0 +1,100 @@
+* {
+  block-size: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  background: rgba(156, 133, 98, 0.22);
+  backdrop-filter: blur(10px);
+
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar ul li {
+  margin: 0.2rem 0.5rem;
+  font-size: 1.5rem;
+}
+main {
+  height: 200vh;
+  background: rgb(72, 77, 62);
+  position: relative;
+}
+
+.boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: relative; */
+}
+.boxes .box1 {
+  height: 2rem;
+  width: 2rem;
+  background: rgb(184, 30, 30);
+  position: absolute;
+  top: 50px;
+  left: 40%;
+  border-radius: 50%;
+}
+
+.boxes .box2 {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background: yellow;
+
+  position: fixed;
+
+  top: calc(50% - 18px);
+
+  left: calc(50% - 18px);
+}
+
+.boxes .box3 {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background: orangered;
+
+  position: -webkit-sticky;
+  position: sticky;
+
+  top: 50px;
+}
+.boxes .box4 {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background: whitesmoke;
+  position: fixed;
+  top: calc(50% - 2rem);
+  left: calc(50% - 2rem);
+  /* z-index: 0; */
+}
+
+.filler {
+  height: 100vh;
+  width: 100%;
+  background: rgb(72, 79, 58);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
